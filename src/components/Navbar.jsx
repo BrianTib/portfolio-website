@@ -1,12 +1,30 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+
+function LinkItem({ to, text, isActive }) {
+    const active = isActive(to) ? "active" : "";
+
+    return (
+        <li className="nav-item">
+            <Link className={`nav-link ${active} text-white`} to={to}>
+                {text}
+            </Link>
+        </li>
+    );
+}
 
 export default function Navbar() {
+    const location = useLocation();
+
+    const isActive = (path) => {
+        return location.pathname === path;
+    };
+
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">
+                <Link className="navbar-brand text-white" to="/">
                     Brian&apos;s Portfolio
-                </a>
+                </Link>
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -15,35 +33,46 @@ export default function Navbar() {
                     aria-controls="navbarText"
                     aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+                    <span className="navbar-toggler-icon">
+                        <svg
+                            className="w-10 h-10"
+                            style={{ width: "1.5em", height: "1.5em" }}
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 17 14">
+                            <path
+                                stroke="white"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                d="M1 1h15M1 7h15M1 13h15"
+                            />
+                        </svg>
+                    </span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarText">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li className="nav-item">
-                            <Link className="nav-link active" to="/">
-                                Home
-                            </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="about-me">
-                                About Me
-                            </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="portfolio">
-                                Portfolio
-                            </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="contact">
-                                Contact
-                            </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="resume">
-                                Resume
-                            </Link>
-                        </li>
+                        <LinkItem
+                            to="/about-me"
+                            text="About Me"
+                            isActive={isActive}
+                        />
+                        <LinkItem
+                            to="/portfolio"
+                            text="Portfolio"
+                            isActive={isActive}
+                        />
+                        <LinkItem
+                            to="/contact"
+                            text="Contact"
+                            isActive={isActive}
+                        />
+                        <LinkItem
+                            to="/resume"
+                            text="Resume"
+                            isActive={isActive}
+                        />
                     </ul>
                 </div>
             </div>

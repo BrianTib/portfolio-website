@@ -4,10 +4,10 @@ import Footer from "./components/Footer";
 
 function App() {
     return (
-        <div id="container">
+        <div className="d-flex flex-column min-vh-100 bg-black text-white">
             <Header />
 
-            <main className="bg-red">
+            <main className="flex-grow-1">
                 <Outlet />
             </main>
 

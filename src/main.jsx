@@ -6,7 +6,10 @@ import { createRoot } from "react-dom/client";
 import App from "./App";
 import Error from "./pages/404";
 import Home from "./pages/Home";
+import AboutMe from "./pages/AboutMe";
+import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
+import Resume from "./pages/Resume";
 
 const router = createBrowserRouter([
     {
@@ -19,8 +22,20 @@ const router = createBrowserRouter([
                 element: <Home />,
             },
             {
-                path: "/contact-me",
+                path: "/about-me",
+                element: <AboutMe />,
+            },
+            {
+                path: "/portfolio",
+                element: <Portfolio />,
+            },
+            {
+                path: "/contact",
                 element: <Contact />,
+            },
+            {
+                path: "/resume",
+                element: <Resume />,
             },
         ],
     },
