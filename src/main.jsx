@@ -5,7 +5,6 @@ import { createRoot } from "react-dom/client";
 
 import App from "./App";
 import Error from "./pages/404";
-import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
@@ -19,10 +18,6 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <Home />,
-            },
-            {
-                path: "/about-me",
                 element: <AboutMe />,
             },
             {

@@ -1,11 +1,15 @@
 import { Link, useLocation } from "react-router-dom";
 
 function LinkItem({ to, text, isActive }) {
-    const active = isActive(to) ? "active" : "";
+    const active = isActive(to);
 
     return (
         <li className="nav-item">
-            <Link className={`nav-link ${active} text-white`} to={to}>
+            <Link
+                className={`nav-link ${
+                    active ? "active text-white" : "text-secondary"
+                }`}
+                to={to}>
                 {text}
             </Link>
         </li>
@@ -20,10 +24,10 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="navbar navbar-expand-lg">
+        <nav className="navbar navbar-expand-lg bg-dark">
             <div className="container-fluid">
                 <Link className="navbar-brand text-white" to="/">
-                    Brian&apos;s Portfolio
+                    <strong>Brian&apos;s Portfolio</strong>
                 </Link>
                 <button
                     className="navbar-toggler"
@@ -53,11 +57,7 @@ export default function Navbar() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarText">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                        <LinkItem
-                            to="/about-me"
-                            text="About Me"
-                            isActive={isActive}
-                        />
+                        <LinkItem to="/" text="About Me" isActive={isActive} />
                         <LinkItem
                             to="/portfolio"
                             text="Portfolio"
