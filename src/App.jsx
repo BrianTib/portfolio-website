@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 
 function App() {
     return (
-        <div id="container" className="bg-black h-screen">
+        <div id="container">
             <Header />
 
             <main className="bg-red">

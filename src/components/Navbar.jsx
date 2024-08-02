@@ -2,24 +2,51 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
     return (
-        <nav className="flex justify-between px-5 py-2 items-center bg-sky-600 text-white">
-            <Link to="/">
-                <h1 className="font-bold text-lg">Brian&apos;s Portfolio</h1>
-            </Link>
-            <ul className="flex gap-4">
-                <li>
-                    <Link to="/about-me">About Me</Link>
-                </li>
-                <li>
-                    <Link to="/portfolio">Portfolio</Link>
-                </li>
-                <li>
-                    <Link to="/contact">Contact</Link>
-                </li>
-                <li>
-                    <Link to="/resume">Resume</Link>
-                </li>
-            </ul>
+        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+            <div className="container-fluid">
+                <a className="navbar-brand" href="#">
+                    Brian&apos;s Portfolio
+                </a>
+                <button
+                    className="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarText"
+                    aria-controls="navbarText"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarText">
+                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li className="nav-item">
+                            <Link className="nav-link active" to="/">
+                                Home
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="about-me">
+                                About Me
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="portfolio">
+                                Portfolio
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="contact">
+                                Contact
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="resume">
+                                Resume
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     );
 }
