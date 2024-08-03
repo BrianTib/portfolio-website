@@ -22,4 +22,4 @@ This is my personal developer portfolio website. It is a one-page web applicatio
 # Links
 
 [Github Repo](https://github.com/BrianTib/portfolio-website)
-[Netlify Deployment](https://main--beautiful-lollipop-d700f9.netlify.app/)
+[Netlify Deployment](https://66ad9aa017cc9e000876cada--beautiful-lollipop-d700f9.netlify.app/)
