@@ -14,7 +14,7 @@ const projects = [
         title: "AppTrack",
         description:
             "This application was created for busy job-hunters who want a centralized place to track what jobs they've applied to, the ongoing status of those applications, and when any interviews are scheduled.",
-        image: "https://private-user-images.githubusercontent.com/168473293/350074375-9bc93a56-3d75-42c4-a47c-52c691ca478d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjI2NDYxMzcsIm5iZiI6MTcyMjY0NTgzNywicGF0aCI6Ii8xNjg0NzMyOTMvMzUwMDc0Mzc1LTliYzkzYTU2LTNkNzUtNDJjNC1hNDdjLTUyYzY5MWNhNDc4ZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwODAzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDgwM1QwMDQzNTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04ZGJkNTEwNzMzYTIxOTg1NjJmYTNlM2U5NGZlMGY0YmZiMTM4N2FjYmYwZWIzNDI0MDdjNjIxNWZlZWNmOWFhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.IDvt1BELzHzVkJcrlzCo5iALLRn6tMS4Ob-NH9mzWoo",
+        image: "/src/assets/apptrack.png",
         link: "https://job-app-tracker-boic.onrender.com/",
         githubLink: "https://github.com/bluethreadmade/job-app-tracker",
     },
@@ -45,7 +45,7 @@ const projects = [
         title: "Readme Generator",
         description:
             "This project allows users to quickly generate README.md files for their projects using a series of prompts to generate high-quality content",
-        image: "https://imgs.search.brave.com/GjPREwK6tC3HPhZ6coZQ1Hn7A_SLJ8z0fMFkV4dzlIY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yYXcu/Z2l0aHVidXNlcmNv/bnRlbnQuY29tL2p1/ZXJnZW53ZWIvSmtJ/bWFnZVBsYWNlaG9s/ZGVyL21hc3Rlci9p/bWFnZXMvcGxhY2Vo/b2xkZXJpbWFnZS5q/cGc_cmF3PXRydWU",
+        image: "src/assets/readme.webp",
         githubLink: "https://github.com/BrianTib/readme-generator",
     },
 ];

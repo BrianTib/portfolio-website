@@ -19,6 +19,13 @@ export default function Footer() {
                             Email
                         </a>
                     </li>
+                    <li>
+                        <a
+                            href="https://www.linkedin.com/in/brian-tiburcio-80668b111/"
+                            className="text-white">
+                            LinkedIn
+                        </a>
+                    </li>
                 </ul>
                 <div className="row">
                     <div className="col-12">
