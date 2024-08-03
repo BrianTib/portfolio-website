@@ -27,7 +27,7 @@ export default function Navbar() {
         <nav className="navbar navbar-expand-lg bg-dark">
             <div className="container-fluid">
                 <Link className="navbar-brand text-white" to="/">
-                    <strong>Brian&apos;s Portfolio</strong>
+                    <strong>Brian.dev</strong>
                 </Link>
                 <button
                     className="navbar-toggler"

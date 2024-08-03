@@ -23,61 +23,67 @@ export default function Page() {
     };
 
     return (
-        <section className="px-2 py-3">
-            <h2 className="text-center mt-2 fw-bold">Contact Me</h2>
-            <div className="container">
-                <div className="row justify-content-center text-black">
-                    <div className="col-md-8 col-lg-6">
-                        <form
-                            onSubmit={handleSubmit}
-                            className="bg-light p-4 rounded shadow-sm">
-                            <div className="mb-3">
-                                <label htmlFor="name" className="form-label">
-                                    Name
-                                </label>
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    id="name"
-                                    name="name"
-                                    value={formData.name}
-                                    onChange={handleChange}
-                                    required
-                                />
-                            </div>
-                            <div className="mb-3">
-                                <label htmlFor="email" className="form-label">
-                                    Email
-                                </label>
-                                <input
-                                    type="email"
-                                    className="form-control"
-                                    id="email"
-                                    name="email"
-                                    value={formData.email}
-                                    onChange={handleChange}
-                                    required
-                                />
-                            </div>
-                            <div className="mb-3">
-                                <label htmlFor="message" className="form-label">
-                                    Message
-                                </label>
-                                <textarea
-                                    className="form-control"
-                                    id="message"
-                                    name="message"
-                                    rows="5"
-                                    value={formData.message}
-                                    onChange={handleChange}
-                                    required></textarea>
-                            </div>
-                            <button
-                                type="submit"
-                                className="btn btn-primary w-100">
-                                Submit
-                            </button>
-                        </form>
+        <section className="container py-5">
+            <h1 className="text-center mb-5 fw-bold">Contact Me</h1>
+            <div className="row justify-content-center">
+                <div className="col-md-8 col-lg-6">
+                    <div className="card shadow">
+                        <div className="card-body p-3">
+                            <form onSubmit={handleSubmit}>
+                                <div className="mb-4">
+                                    <label
+                                        htmlFor="name"
+                                        className="form-label fw-bold">
+                                        Name
+                                    </label>
+                                    <input
+                                        type="text"
+                                        className="form-control form-control-lg"
+                                        id="name"
+                                        name="name"
+                                        value={formData.name}
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                </div>
+                                <div className="mb-4">
+                                    <label
+                                        htmlFor="email"
+                                        className="form-label fw-bold">
+                                        Email
+                                    </label>
+                                    <input
+                                        type="email"
+                                        className="form-control form-control-lg"
+                                        id="email"
+                                        name="email"
+                                        value={formData.email}
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                </div>
+                                <div className="mb-4">
+                                    <label
+                                        htmlFor="message"
+                                        className="form-label fw-bold">
+                                        Message
+                                    </label>
+                                    <textarea
+                                        className="form-control form-control-lg"
+                                        id="message"
+                                        name="message"
+                                        rows="5"
+                                        value={formData.message}
+                                        onChange={handleChange}
+                                        required></textarea>
+                                </div>
+                                <button
+                                    type="submit"
+                                    className="btn btn-primary btn-lg w-100 fw-bold">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
