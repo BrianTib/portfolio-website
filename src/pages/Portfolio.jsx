@@ -14,7 +14,7 @@ const projects = [
         title: "AppTrack",
         description:
             "This application was created for busy job-hunters who want a centralized place to track what jobs they've applied to, the ongoing status of those applications, and when any interviews are scheduled.",
-        image: "/src/assets/apptrack.png",
+        image: "./src/assets/apptrack.png",
         link: "https://job-app-tracker-boic.onrender.com/",
         githubLink: "https://github.com/bluethreadmade/job-app-tracker",
     },
@@ -45,7 +45,7 @@ const projects = [
         title: "Readme Generator",
         description:
             "This project allows users to quickly generate README.md files for their projects using a series of prompts to generate high-quality content",
-        image: "src/assets/readme.webp",
+        image: "./src/assets/readme.webp",
         githubLink: "https://github.com/BrianTib/readme-generator",
     },
 ];
