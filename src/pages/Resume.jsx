@@ -4,10 +4,7 @@ export default function Page() {
             <h1 className="text-center mb-5 fw-bold">Resume</h1>
 
             <div className="text-center mb-5">
-                <a
-                    href="/src/assets/resume.pdf"
-                    className="btn btn-primary"
-                    download>
+                <a href="./resume.pdf" className="btn btn-primary" download>
                     Download Resume
                 </a>
             </div>
