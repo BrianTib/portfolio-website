@@ -3,6 +3,15 @@ export default function Page() {
         <section className="container py-5">
             <h1 className="text-center mb-5 fw-bold">Resume</h1>
 
+            <div className="text-center mb-5">
+                <a
+                    href="/src/assets/resume.pdf"
+                    className="btn btn-primary"
+                    download>
+                    Download Resume
+                </a>
+            </div>
+
             <div className="row">
                 <div className="col-md-6 mb-4">
                     <div className="card h-100 shadow">
